@@ -207,8 +207,13 @@ async def showcase_photo(message: Message, state: FSMContext):
         ]
     )
 
-    await message.answer("✅ Отчёт отправлен. Хорошей смены ☕️")
     await state.clear()
+
+    # --- Отправляем кнопку "Начать смену" снова ---
+    await message.answer(
+        "✅ Отчёт отправлен. Хорошей смены ☕️\n\nНажми кнопку ниже, чтобы открыть смену заново:",
+        reply_markup=start_keyboard()
+    )
 
 # ======================
 # ЗАПУСК
