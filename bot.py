@@ -21,7 +21,7 @@ if not BOT_TOKEN:
 # Chat ID группы или канала, куда бот будет отправлять отчёты
 # Важно: для супергрупп обязательно -1001234567890
 REPORT_CHAT_ID = os.getenv("REPORT_CHAT_ID")
-if not REPORT_CHAT_ID:
+if not REPORT_CHAT_ID:-1003637472098
     raise RuntimeError("REPORT_CHAT_ID не задан! Вставь chat_id группы в переменные окружения Bothost")
 
 # Переименование бариста
