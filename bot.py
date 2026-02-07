@@ -23,7 +23,7 @@ if not REPORT_CHAT_ID:
 REPORT_CHAT_ID = int(REPORT_CHAT_ID)  # для супергруппы
 
 BARISTAS = {
-    "barista_1": "Бариста 1",
+    "barista_1": "Бариста м 1",
     "barista_2": "Бариста 2",
     "barista_3": "Бариста 3",
 }
