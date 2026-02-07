@@ -67,12 +67,6 @@ dp = Dispatcher()
 router = Router()
 dp.include_router(router)
 
-# ----------------------
-# DEBUG ХЭНДЛЕР
-# ----------------------
-@router.message()
-async def debug(message: Message):
-    await message.answer(f"Привет! Бот жив. Chat_id: {message.chat.id}")
 
 # ======================
 # ХЕНДЛЕРЫ FSM
